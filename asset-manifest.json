@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/PlayingCardsPages/static/css/main.cb820922.chunk.css",
+    "main.js": "/PlayingCardsPages/static/js/main.7601eac9.chunk.js",
+    "main.js.map": "/PlayingCardsPages/static/js/main.7601eac9.chunk.js.map",
+    "runtime-main.js": "/PlayingCardsPages/static/js/runtime-main.83db9976.js",
+    "runtime-main.js.map": "/PlayingCardsPages/static/js/runtime-main.83db9976.js.map",
+    "static/js/2.c0a6d5f8.chunk.js": "/PlayingCardsPages/static/js/2.c0a6d5f8.chunk.js",
+    "static/js/2.c0a6d5f8.chunk.js.map": "/PlayingCardsPages/static/js/2.c0a6d5f8.chunk.js.map",
+    "static/js/3.0a4e9280.chunk.js": "/PlayingCardsPages/static/js/3.0a4e9280.chunk.js",
+    "static/js/3.0a4e9280.chunk.js.map": "/PlayingCardsPages/static/js/3.0a4e9280.chunk.js.map",
+    "index.html": "/PlayingCardsPages/index.html",
+    "static/css/main.cb820922.chunk.css.map": "/PlayingCardsPages/static/css/main.cb820922.chunk.css.map",
+    "static/js/2.c0a6d5f8.chunk.js.LICENSE.txt": "/PlayingCardsPages/static/js/2.c0a6d5f8.chunk.js.LICENSE.txt",
+    "static/media/Heart.672360b3.png": "/PlayingCardsPages/static/media/Heart.672360b3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.83db9976.js",
+    "static/js/2.c0a6d5f8.chunk.js",
+    "static/css/main.cb820922.chunk.css",
+    "static/js/main.7601eac9.chunk.js"
+  ]
+}
