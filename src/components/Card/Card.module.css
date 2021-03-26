@@ -1,0 +1,309 @@
+.FlipCard {
+  background-color: transparent;
+  width: 80px;
+  height: 120px;
+  perspective: 1000px;
+  margin: 3px;
+}
+
+.FlipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.FlipCard:hover .FlipCardInner {
+  transform: rotateY(180deg);
+}
+
+.FlipCardFront,
+.FlipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.FlipCardFront {
+  background-color: #bbb;
+  color: black;
+}
+
+.FlipCardBack {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.CardInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+.Rank1 {
+  position: absolute;
+  padding: 6px;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+}
+.Rank2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 6px;
+  font-size: 20px;
+}
+
+/* ///////////////////////////////////////////////////// */
+
+.RangoliWrapper {
+  position: absolute;
+  /*         transform: rotate3d(1, 0, 0, 55deg); */
+  width: 25px;
+  height: 33px;
+  margin: 0px 5px;
+}
+.Rangoli {
+  width: 25px;
+  height: 33px;
+  background-color: transparent;
+  border-bottom: 2px solid #ffffff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.Rangoli:before {
+  width: 25px;
+  height: 33px;
+  background-color: transparent;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border-bottom: 2px solid #fff;
+  top: -25px;
+  right: 25px;
+}
+.Rangoli:after {
+  width: 25px;
+  height: 33px;
+  background-color: transparent;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border-bottom: 2px solid #fff;
+  left: 25px;
+  top: -25px;
+}
+.RangoliDesign {
+  width: 2px;
+  height: 12px;
+  background-color: #fff;
+  position: absolute;
+  top: -10px;
+  left: 24px;
+}
+.RangoliDesign:before {
+  content: "";
+  width: 5px;
+  height: 7px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  position: absolute;
+  border-radius: 50%;
+  left: -4px;
+  top: -9px;
+}
+.RangoliDesignMediumRight {
+  transform: rotate(60deg);
+  left: 30px;
+  top: -10px;
+  height: 7px;
+  position: absolute;
+}
+.RangoliDesignMediumLeft {
+  transform: rotate(-60deg);
+  left: 18px;
+  top: -10px;
+  height: 7px;
+  position: absolute;
+}
+.RangoliDesignLargeRight {
+  transform: rotate(75deg);
+  left: 33px;
+  top: -4px;
+  position: absolute;
+}
+.RangoliDesignLargeLeft {
+  transform: rotate(-75deg);
+  left: 14px;
+  top: -4px;
+  position: absolute;
+}
+.InsideDesign {
+  width: 7px;
+  height: 7px;
+  background-color: transparent;
+  position: absolute;
+  left: 20px;
+  bottom: 21px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.InsideDesign:before {
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  position: absolute;
+  content: "";
+  left: 0px;
+  transform: rotate(-25deg);
+  border-top: 2px solid #fff;
+  border-radius: 50%;
+  bottom: -10px;
+}
+.InsideDesign::after {
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  position: absolute;
+  content: "";
+  left: -17px;
+  transform: rotate(26deg);
+  border-top: 2px solid #fff;
+  border-radius: 50%;
+  bottom: -10px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  position: relative;
+}
+.RangoliMainWrapper {
+  width: 80px;
+  height: 120px;
+  background: #25242d;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.RangoliMainWrapper:after {
+  content: "*";
+  position: absolute;
+  color: #fff;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(3);
+  /* font-size: 8em; */
+}
+.RangoliMainWrapper > .RangoliWrapper:nth-child(1) {
+  /* background: red; */
+  left: 50%;
+  transform: translate(-50%);
+  top: 11%;
+}
+.RangoliMainWrapper > .RangoliWrapper:nth-child(2) {
+  left: 71%;
+  transform: translate(-50%) rotate(70deg);
+  top: 29%;
+}
+.RangoliMainWrapper > .RangoliWrapper:nth-child(3) {
+  left: 61%;
+  transform: translate(-50%) rotate(-200deg);
+  top: 56%;
+}
+.RangoliMainWrapper > .RangoliWrapper:nth-child(4) {
+  left: 30%;
+  transform: translate(-50%) rotate(200deg);
+  top: 54%;
+}
+.RangoliMainWrapper > .RangoliWrapper:nth-child(5) {
+  left: 24%;
+  transform: translate(-50%) rotate(-70deg);
+  top: 26%;
+}
+.Image {
+  height: 90px;
+  width: 60px;
+}
+@media (max-width: 700px) {
+  .FlipCard {
+    height: 60px;
+    width: 40px;
+    overflow: hidden;
+  }
+  .Image {
+    height: 30px;
+    width: 20px;
+  }
+  .Rank1 {
+    font-size: 16px;
+    padding: 2px;
+  }
+  .Rank2 {
+    font-size: 16px;
+    padding: 2px;
+  }
+  /*  */
+
+  .RangoliWrapper {
+    width: 12px;
+    height: 15px;
+  }
+  .Rangoli {
+    width: 13px;
+    height: 15px;
+  }
+  .Rangoli:before {
+    width: 13px;
+    height: 15px;
+  }
+  .Rangoli:after {
+    width: 13px;
+    height: 15px;
+  }
+  .RangoliDesign {
+    width: 2px;
+    height: 6px;
+  }
+  .RangoliDesign:before {
+    content: "";
+    width: 5px;
+    height: 4px;
+  }
+  .RangoliDesignMediumRight {
+    height: 4px;
+  }
+  .RangoliDesignMediumLeft {
+    height: 4px;
+  }
+  .InsideDesign {
+    width: 4px;
+    height: 4px;
+  }
+  .InsideDesign:before {
+    width: 7px;
+    height: 7px;
+  }
+  .InsideDesign::after {
+    width: 7px;
+    height: 7px;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    position: relative;
+  }
+  .RangoliMainWrapper {
+    width: 40px;
+    height: 60px;
+  }
+}
